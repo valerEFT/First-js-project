@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="main-container">
+        <div class="left-container">
+          <img class="logo-img" src="/images/logo.png" alt="" />
+          <h1 class="logo-content">Honey Movies</h1>
+        </div>
+        <div class="burger-menu">
+          <button id="menu-toggle" class="menu-toggle">☰</button>
+        </div>
+        <nav id="sidebar" class="sidebar">
+          <button id="close-btn" class="close-btn">&times;</button>
+          <ul>
+            <li><a href="#">Movies</a></li>
+            <li><a href="#">TV Shows</a></li>
+            <li><a href="#">Anime</a></li>
+          </ul>
+        </nav>
+
+        <div class="right-container">
+          <nav>
+            <ul class="header-ul">
+              <li class="Movies">Movies</li>
+              <li class="TV-Shows">TV Shows</li>
+              <li class="Anime">Anime</li>
+            </ul>
+          </nav>
+
+          <div class="input-container">
+            <img class="search" src="./images/Search....png" alt="" />
+            <label for="input"></label>
+            <input
+              type="text"
+              class="input"
+              name="input"
+              placeholder="Search"
+            />
+            <img class="key" src="./images/Filter.png" alt="" />
+            <ul id="results"></ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <div class="flex aside-main">
+        <aside class="aside">
+          <nav class="aside-nav">
+            <ul class="aside-ul1 aside-ul">
+              <li class="list-title">Menu</li>
+              <li class="list-item aside-img orange">
+                <img class="aside-img" src="./images/Squircle.png" alt="" />Home
+              </li>
+              <li class="list-item aside-img">
+                <img
+                  class="aside-img"
+                  src="./images/Discover.png"
+                  alt=""
+                />Discover
+              </li>
+              <li class="list-item aside-img">
+                <img class="aside-img" src="./images/Award.png" alt="" />Awards
+              </li>
+              <li class="list-item aside-img">
+                <img
+                  class="aside-img"
+                  src="./images/Celebrities.png"
+                  alt=""
+                />Celebrities
+              </li>
+            </ul>
+            <ul class="aside-ul2 aside-ul">
+              <li class="list-title">Library</li>
+              <li class="list-item aside-img">
+                <img class="aside-img" src="./images/Recent.png" alt="" />Recent
+              </li>
+              <li class="list-item onclick hover aside-img">
+                <img class="aside-img" src="./images/Top Rated.png" alt="" />Top
+                Rated
+              </li>
+              <li class="list-item aside-img">
+                <img
+                  class="aside-img"
+                  src="./images/Downloaded.png"
+                  alt=""
+                />Downloaded
+              </li>
+              <li class="list-item aside-img">
+                <img
+                  class="aside-img"
+                  src="./images/Playlists.png"
+                  alt=""
+                />Playlists
+              </li>
+              <li class="list-item aside-img">
+                <img
+                  class="aside-img"
+                  src="./images/Watchlist.png"
+                  alt=""
+                />Watchlist
+              </li>
+              <li class="list-item aside-img">
+                <img
+                  class="aside-img"
+                  src="./images/Completed.png"
+                  alt=""
+                />Completed
+              </li>
+            </ul>
+            <ul class="aside-ul3 aside-ul">
+              <li class="list-title">General</li>
+              <li class="list-item aside-img">
+                <img
+                  class="aside-img"
+                  src="./images/Settings.png"
+                  alt=""
+                />Settings
+              </li>
+              <li class="list-item aside-img">
+                <img class="aside-img" src="./images/Log Out.png" alt="" />Log
+                Out
+              </li>
+            </ul>
+          </nav>
+        </aside>
+        <section class="first-section flex-column">
+          <div class="top-swiper-container">
+            <div class="watchlist-container">
+              <img
+                class="watchlist-img"
+                src="./images/Watchlist +.png"
+                alt=""
+              />
+            </div>
+            <div class="watch-now-container">
+              <img src="./images/Watch Now.png" alt="" />
+            </div>
+            <!-- Swiper -->
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <h3 class="swiper-movie-title">The Crown</h3>
+                  <img
+                    class="watchlist-img"
+                    src="./images/Crown.jfif"
+                    alt="The Crown"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <h3 class="swiper-movie-title">Loki</h3>
+                  <img
+                    class="watchlist-img"
+                    src="images/loki.jfif"
+                    alt="Loki"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <h3 class="swiper-movie-title">Chernobyl</h3>
+                  <img src="./images/chernobyl.png" alt="Chernobyl" />
+                </div>
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+          <div class="bot-movies-container">
+            <h2 class="movies-title">Movies</h2>
+          </div>
+          <div class="bot-container-cards">
+            <div class="card1 cards">
+              <div class="plus-container">
+                <img src="./images/add.png" alt="" />
+              </div>
+              <div class="more-info">
+                <img src="./images/More info.png" alt="" />
+              </div>
+              <h3 class="title-name">Loki</h3>
+              <span class="stars"
+                ><img src="./images/stars4.5.png" alt=""
+              /></span>
+              <span class="episode">6 Ep</span>
+              <span class="genre">Superhero</span>
+              <img src="./images/movie1.png" alt="Loki" />
+            </div>
+            <div class="card2 cards">
+              <div class="more-info">
+                <img src="./images/More info.png" alt="" />
+              </div>
+              <div class="plus-container">
+                <img src="./images/add.png" alt="" />
+              </div>
+              <h3 class="title-name">Chernobyl</h3>
+              <span class="stars"
+                ><img src="./images/stars 5.png" alt=""
+              /></span>
+              <span class="episode">5 Ep</span>
+              <span class="genre">Mini Series</span>
+              <img src="./images/movie2.png" alt="Chernobyl" />
+            </div>
+            <div class="card3 cards">
+              <div class="more-info">
+                <img src="./images/More info.png" alt="" />
+              </div>
+              <div class="plus-container">
+                <img src="./images/add.png" alt="" />
+              </div>
+              <h3 class="title-name">Rick and Morty</h3>
+              <span class="stars"
+                ><img src="./images/stars 5.png" alt=""
+              /></span>
+              <span class="episode">49</span>
+              <span class="genre">Fantasy</span>
+              <img src="./images/movie3.png" alt="Rick and Morty" />
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <!-- top rated -->
+    <section class="top-rated-section flex-center">
+      <div class="top-rated-section-container">
+        <h2 class="top-rated-movies-content">Top Rated Movies</h2>
+        <div class="flex top-rated-container" id="topRatedContainer"></div>
+        <h3 class="flex-center rights">
+          2024. All rights recerved, developed by Valeri
+        </h3>
+      </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+    <script src="./index.js"></script>
+  </body>
+</html>

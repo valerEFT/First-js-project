@@ -1,0 +1,591 @@
+@import "./mixin";
+@import "./variable";
+@import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $black0;
+  color: $white;
+}
+.flex {
+  display: flex;
+}
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+.flex-center {
+  @include flex-center;
+}
+// swiper >
+#swiper-circle-background {
+  width: 74px;
+  height: 26px;
+  padding: 8px, 12px, 8px, 12px;
+  border-radius: 5px;
+  gap: 10px;
+  background: $F9F9F9;
+}
+.swiper-pagination-bullet-active {
+  background-color: orange;
+}
+.swiper {
+  width: 770px;
+  height: 350px;
+  border-radius: 20px;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.swiper-movie-title {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  font-family: $lato;
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 48px;
+  color: $F9F9F9;
+  z-index: 10;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper {
+  margin-left: auto;
+  margin-right: auto;
+}
+// < swiper
+.flex-align-center {
+  display: flex;
+  align-items: center;
+}
+
+//header
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  .main-container {
+    position: relative;
+    width: 1440px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .left-container {
+    display: flex;
+    padding: 61px 0px 0px 118px;
+    width: 176px;
+    .logo-img {
+      width: 59px;
+      cursor: pointer;
+    }
+    .logo-content {
+      font-family: $luckyGuy;
+      color: $main-orange;
+      font-size: 32px;
+      font-weight: 400;
+      line-height: 32px;
+      cursor: pointer;
+    }
+  }
+  .right-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 194px;
+    gap: 100px;
+    padding-right: 182px;
+    .header-ul {
+      display: flex;
+      list-style: none;
+      gap: 50px;
+      margin-top: 74px;
+      .Movies {
+        font-family: $lato;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 24px;
+        color: $main-orange;
+        cursor: pointer;
+      }
+      .TV-Shows {
+        font-family: $lato;
+        font-size: 24px;
+        font-weight: 800;
+        line-height: 24px;
+        color: $F9F9F9;
+        cursor: pointer;
+      }
+      .Anime {
+        font-family: $lato;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 24px;
+        color: $F9F9F9;
+        cursor: pointer;
+      }
+    }
+  }
+  .input-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: 64px;
+
+    .search {
+      position: absolute;
+      left: 25px;
+    }
+    .key {
+      position: absolute;
+      right: 25px;
+    }
+  }
+  .input {
+    width: 315px;
+    height: 56px;
+    border-radius: 12px;
+    background: #21242d;
+    border: 1px solid #f9f9f91a;
+    padding-left: 64px;
+    outline: none;
+    color: $white;
+  }
+}
+
+//aside
+.main {
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.aside-main {
+  width: 1440px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .aside {
+    margin-left: 143px;
+    width: 195px;
+  }
+
+  .aside-nav {
+    .aside-ul1 {
+      display: flex;
+      padding-top: 31px;
+    }
+    .aside-ul2 {
+      padding-top: 59px;
+    }
+    .aside-ul3 {
+      padding-top: 59px;
+    }
+    .aside-ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+    }
+    .list-title {
+      @include list-title;
+      cursor: pointer;
+    }
+    .list-item {
+      display: flex;
+      gap: 15px;
+      height: 22px;
+      width: 150px;
+      @include list-item;
+      cursor: pointer;
+    }
+    .orange {
+      color: $main-orange;
+    }
+  }
+}
+
+//swiper-center
+.first-section {
+  display: flex;
+
+  // margin-left: 148px;
+  margin-top: 46px;
+  margin-right: 182px;
+
+  width: 770px;
+  .top-swiper-container {
+    position: relative;
+    .watchlist-container {
+      position: absolute;
+      z-index: 999;
+      gap: 10px;
+      bottom: 21px;
+      left: 20px;
+      border-radius: 15px;
+      background-color: rgba(249, 249, 249, 0.2);
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      padding: 19px 25px;
+      cursor: pointer;
+    }
+    .watch-now-container {
+      position: absolute;
+      z-index: 2;
+      gap: 10px;
+      bottom: 21px;
+      right: 20px;
+      border-radius: 15px;
+      background-color: $main-orange;
+      padding: 19px 47px;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+    }
+  }
+  .bot-movies-container {
+    .movies-title {
+      margin: 60px 0px 30px 0px;
+      font-family: $lato;
+      font-weight: 800;
+      font-size: 30px;
+      line-height: 30px;
+      color: $F9F9F9;
+    }
+  }
+  .episode {
+    font-family: $lato;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 18px;
+    text-align: left;
+    color: $F9F9F9;
+    opacity: 0.7;
+    position: absolute;
+    left: 10px;
+    top: 199px;
+    z-index: 919219221;
+  }
+  .genre {
+    font-family: $lato;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 18px;
+    text-align: left;
+    color: $F9F9F9;
+    opacity: 0.7;
+    position: absolute;
+    right: 10px;
+    top: 199px;
+    z-index: 919219221;
+  }
+  .title-name {
+    position: absolute;
+    top: 21px;
+    left: 21px;
+    @include movies-title;
+    cursor: pointer;
+    z-index: 919219221;
+  }
+  .stars {
+    position: absolute;
+    top: 57px;
+    left: 21px;
+    cursor: pointer;
+    z-index: 919219221;
+  }
+}
+.bot-container-cards {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .card1 {
+    width: 100%;
+    max-width: 237px;
+    position: relative;
+  }
+  .card2 {
+    width: 100%;
+    max-width: 237px;
+    position: relative;
+  }
+  .card3 {
+    width: 100%;
+    max-width: 237px;
+    position: relative;
+  }
+}
+.cards {
+  position: relative;
+}
+.plus-container {
+  width: 57px;
+  height: 57px;
+  border-radius: 20px;
+  gap: 10px;
+  background-color: rgba(249, 249, 249, 0.2);
+  @include flex-center;
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+  cursor: pointer;
+  z-index: 919219221;
+}
+.more-info {
+  width: 150px;
+  height: 57px;
+  border-radius: 15px;
+  background-color: $main-orange;
+  font-family: $lato;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 18px;
+  @include flex-center;
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  cursor: pointer;
+  z-index: 919219221;
+}
+
+// top rated
+.top-rated-section {
+  max-width: 100%;
+  .top-rated-section-container {
+    max-width: 1440px;
+
+    .top-rated-movies-content {
+      display: flex;
+      font-family: $lato;
+      font-size: 48px;
+      font-weight: 800;
+      line-height: 48px;
+      color: $white;
+      margin: 212px 0px 66px 140px;
+    }
+  }
+  .top-rated-container {
+    margin-left: 159px;
+    gap: 34px;
+  }
+}
+.movieImg {
+  width: 295px;
+  height: 417px;
+  border-radius: 17px 17px 0px 0px;
+}
+.ratedMovieTitle {
+  width: 295px;
+  font-family: $lato;
+  font-size: 29.24px;
+  font-weight: 600;
+  line-height: 35.09px;
+}
+.newTabPlot {
+  font-family: $lato;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 16.8px;
+}
+.movieInfo {
+  width: 295px;
+
+  .plot {
+    @include top-rated-content;
+  }
+}
+.releaseDate {
+  font-family: $lato;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 20.4px;
+  color: $F9F9F9;
+  opacity: 0.7;
+  margin: 11px 0px 17px 0px;
+}
+.rights {
+  font-family: $luckyGuy;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 32px;
+  margin: 101px 0px 71px 0px;
+  color: $main-orange;
+}
+.card {
+  cursor: pointer;
+  position: relative;
+  .rating {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 3px 21px 7px 23px;
+    background-color: $main-orange;
+    font-family: $lato;
+    font-size: 23px;
+    font-weight: 600;
+    line-height: 27.6px;
+    color: $black0;
+    border-radius: 0px 17px;
+  }
+}
+.swiper-button-prev {
+  color: #fff;
+  padding: 17px 20px;
+  background-color: rgba(249, 249, 249, 0.2);
+  border-radius: 12px;
+  left: 40px;
+}
+.swiper-button-next {
+  color: #fff;
+  padding: 17px 20px;
+  background-color: rgba(249, 249, 249, 0.2);
+  border-radius: 12px;
+  right: 40px;
+}
+#results {
+  margin-top: 56px;
+  position: absolute;
+  z-index: 110;
+  top: 0;
+  right: 0;
+  background-color: black;
+}
+.movieSearchItem {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 5px 0;
+  list-style-type: none;
+  cursor: pointer;
+}
+.movieSearchImage {
+  width: 50px;
+}
+.white {
+  background-color: $white;
+}
+.black {
+  color: $black0;
+}
+.swiper-button-prev:after {
+  font-size: 16px;
+}
+.swiper-button-next:after {
+  font-size: 16px;
+}
+// burger
+.burger-menu {
+  position: absolute;
+  top: 52px;
+  right: 10px;
+  display: none;
+}
+
+.menu-toggle {
+  background-color: #333;
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.sidebar {
+  height: 100vh;
+  width: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #333;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  z-index: 9999;
+}
+
+.sidebar a {
+  padding: 10px 15px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  display: block;
+}
+
+.sidebar a:hover {
+  background-color: #575757;
+}
+
+.close-btn {
+  position: absolute;
+  top: 20px;
+  left: 150px; /* Перемещаем кнопку закрытия влево */
+  font-size: 36px;
+  margin-left: 50px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.opened .sidebar {
+  width: 250px;
+}
+
+.opened .content {
+  margin-right: 250px; /* Сдвигаем контент влево при открытии меню */
+}
+
+.hidden {
+  display: none;
+}
+
+/* media */
+@media (max-width: 1024px) {
+  .burger-menu {
+    display: block;
+  }
+  .Movies {
+    display: none;
+  }
+  .TV-Shows {
+    display: none;
+  }
+  .Anime {
+    display: none;
+  }
+  .input {
+    display: none;
+  }
+  .key {
+    display: none;
+  }
+  .search {
+    display: none;
+  }
+  .left-container {
+    position: absolute;
+    left: -110px;
+    top: -30px;
+  }
+}

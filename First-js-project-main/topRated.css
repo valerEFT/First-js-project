@@ -1,0 +1,178 @@
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.33);
+  /* Здесь можно задать нужный уровень прозрачности (0.5 для 50%) */
+  z-index: -1; /* Устанавливаем z-index, чтобы затемнение было под другими элементами */
+}
+
+#movie-title {
+  font-family: "Lato", sans-serif;
+  font-size: 68px;
+  font-weight: 800;
+  line-height: 81.6px;
+}
+#movie-plot {
+  font-family: "Lato", sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 36px;
+  margin-top: 24px;
+}
+.new-tab-section {
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1440px;
+  height: 1000px;
+  gap: 100px;
+}
+.left {
+  position: relative;
+  z-index: 1; /* Размещаем поверх заднего фона */
+  color: white; /* Цвет текста */
+}
+.right {
+  position: relative;
+}
+.img-text {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #000000;
+  z-index: 2;
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 18px;
+  background-color: #f8b319;
+  padding: 8px 46.5px 8px 46.5px;
+  border-radius: 0px 20px 0px 20px;
+}
+.movie-img {
+  width: 452px;
+  height: 568px;
+  border-radius: 20px;
+  position: relative;
+  z-index: 1; /* Размещаем поверх заднего фона */
+  color: white; /* Цвет текста */
+}
+.watch-now {
+  width: 240px;
+  height: 71px;
+  background-color: #f8b319;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000000;
+  font-family: "Lato", sans-serif;
+  font-size: 22px;
+  font-weight: 800;
+  line-height: 22px;
+  border-radius: 15px;
+  position: relative;
+  left: 260px;
+  bottom: -24px;
+  cursor: pointer;
+}
+.watchlist {
+  width: 202px;
+  height: 71px;
+  background-color: rgba(249, 249, 249, 0.2);
+  border-radius: 15px;
+  position: relative;
+  left: 12px;
+  bottom: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+.watchlist-content {
+  font-family: "Lato", sans-serif;
+  font-size: 22px;
+  font-weight: 800;
+  line-height: 22px;
+  text-align: left;
+  color: #f9f9f9;
+}
+.back-arrow {
+  width: 270px;
+  height: 50px;
+  position: absolute;
+  left: -55px;
+  top: -80px;
+  border-radius: 15px;
+  display: flex;
+  gap: 21px;
+  justify-content: center;
+  align-items: center;
+}
+.back-text {
+  font-family: "Lato", sans-serif;
+  font-size: 28px;
+  font-weight: 800;
+  line-height: 28px;
+  color: #f9f9f9;
+  cursor: pointer;
+}
+.img-container {
+  background-color: rgba(249, 249, 249, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.stars {
+  width: 38px;
+}
+#views {
+  margin-top: 22px;
+}
+#IMDB {
+  padding-top: 27px;
+}
+#views {
+  font-family: "Lato", sans-serif;
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 30px;
+}
+.container-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  gap: 100px;
+}

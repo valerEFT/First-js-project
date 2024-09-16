@@ -1,0 +1,127 @@
+@import "./variable";
+
+// 1st slide
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@mixin list-title {
+  font-family: $lato;
+  color: $F9F9F9;
+  opacity: 0.67;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 21.6px;
+}
+@mixin list-item {
+  font-family: $lato;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 21.6px;
+  color: $F9F9F9;
+}
+@mixin movies-title {
+  font-family: $lato;
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 24px;
+  text-align: left;
+  color: $F9F9F9;
+}
+@mixin movies-content {
+  font-family: $lato;
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 24px;
+  text-align: left;
+  color: $F9F9F9;
+  opacity: 0.7;
+}
+@mixin watch-list {
+  font-family: $lato;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 18px;
+  text-align: left;
+  color: $F9F9F9;
+}
+@mixin search {
+  font-family: $lato;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 18px;
+  text-align: left;
+  color: $F9F9F9;
+  opacity: 0.67;
+}
+
+//top rated (2 slide)
+
+@mixin top-rated-title {
+  font-family: $lato;
+  font-weight: 600;
+  font-size: 29.24px;
+  line-height: 35.09px;
+  color: $white;
+}
+@mixin top-rated-date {
+  font-family: $lato;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 20.4px;
+  color: $F9F9F9;
+  opacity: 0.7;
+}
+@mixin top-rated-content {
+  font-family: $lato;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16.8px;
+  color: $white;
+}
+@mixin rating {
+  font-family: $lato;
+  font-weight: 600;
+  font-size: 23px;
+  line-height: 26.6px;
+  text-align: right;
+  color: $black0;
+}
+@mixin Back-home {
+  font-family: $lato;
+  font-size: 28px;
+  font-weight: 800;
+  line-height: 28px;
+  text-align: left;
+  color: $white;
+}
+@mixin top-rated-movies {
+  font-family: $lato;
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 48px;
+  text-align: left;
+  color: $F9F9F9;
+}
+
+// 3 slide
+
+@mixin loki__watchlist {
+  font-family: $lato;
+  font-size: 22px;
+  font-weight: 800;
+  line-height: 22px;
+  text-align: left;
+  color: $F9F9F9;
+}
+
+@mixin loki__top-rated {
+  font-family: $lato;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 18px;
+  text-align: left;
+  color: $black0;
+}

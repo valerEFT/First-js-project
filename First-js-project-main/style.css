@@ -1,0 +1,626 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#swiper-circle-background {
+  width: 74px;
+  height: 26px;
+  padding: 8px, 12px, 8px, 12px;
+  border-radius: 5px;
+  gap: 10px;
+  background: #f9f9f9;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: orange;
+}
+
+.swiper {
+  width: 770px;
+  height: 350px;
+  border-radius: 20px;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.swiper-movie-title {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  font-family: "Lato", sans-serif;
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 48px;
+  color: #f9f9f9;
+  z-index: 10;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.swiper {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.flex-align-center {
+  display: flex;
+  align-items: center;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.header .main-container {
+  position: relative;
+  width: 1440px;
+  display: flex;
+  justify-content: space-between;
+}
+.header .left-container {
+  display: flex;
+  padding: 61px 0px 0px 118px;
+  width: 176px;
+}
+.header .left-container .logo-img {
+  width: 59px;
+  cursor: pointer;
+}
+.header .left-container .logo-content {
+  font-family: "Luckiest Guy", cursive;
+  color: #f8b319;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 32px;
+  cursor: pointer;
+}
+.header .right-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 194px;
+  gap: 100px;
+  padding-right: 182px;
+}
+.header .right-container .header-ul {
+  display: flex;
+  list-style: none;
+  gap: 50px;
+  margin-top: 74px;
+}
+.header .right-container .header-ul .Movies {
+  font-family: "Lato", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 24px;
+  color: #f8b319;
+  cursor: pointer;
+}
+.header .right-container .header-ul .TV-Shows {
+  font-family: "Lato", sans-serif;
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 24px;
+  color: #f9f9f9;
+  cursor: pointer;
+}
+.header .right-container .header-ul .Anime {
+  font-family: "Lato", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 24px;
+  color: #f9f9f9;
+  cursor: pointer;
+}
+.header .input-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-top: 64px;
+}
+.header .input-container .search {
+  position: absolute;
+  left: 25px;
+}
+.header .input-container .key {
+  position: absolute;
+  right: 25px;
+}
+.header .input {
+  width: 315px;
+  height: 56px;
+  border-radius: 12px;
+  background: #21242d;
+  border: 1px solid rgba(249, 249, 249, 0.1019607843);
+  padding-left: 64px;
+  outline: none;
+  color: #ffffff;
+}
+
+.main {
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.aside-main {
+  width: 1440px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.aside-main .aside {
+  margin-left: 143px;
+  width: 195px;
+}
+.aside-main .aside-nav .aside-ul1 {
+  display: flex;
+  padding-top: 31px;
+}
+.aside-main .aside-nav .aside-ul2 {
+  padding-top: 59px;
+}
+.aside-main .aside-nav .aside-ul3 {
+  padding-top: 59px;
+}
+.aside-main .aside-nav .aside-ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.aside-main .aside-nav .list-title {
+  font-family: "Lato", sans-serif;
+  color: #f9f9f9;
+  opacity: 0.67;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 21.6px;
+  cursor: pointer;
+}
+.aside-main .aside-nav .list-item {
+  display: flex;
+  gap: 15px;
+  height: 22px;
+  width: 150px;
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 21.6px;
+  color: #f9f9f9;
+  cursor: pointer;
+}
+.aside-main .aside-nav .orange {
+  color: #f8b319;
+}
+
+.first-section {
+  display: flex;
+  margin-top: 46px;
+  margin-right: 182px;
+  width: 770px;
+}
+.first-section .top-swiper-container {
+  position: relative;
+}
+.first-section .top-swiper-container .watchlist-container {
+  position: absolute;
+  z-index: 999;
+  gap: 10px;
+  bottom: 21px;
+  left: 20px;
+  border-radius: 15px;
+  background-color: rgba(249, 249, 249, 0.2);
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  padding: 19px 25px;
+  cursor: pointer;
+}
+.first-section .top-swiper-container .watch-now-container {
+  position: absolute;
+  z-index: 2;
+  gap: 10px;
+  bottom: 21px;
+  right: 20px;
+  border-radius: 15px;
+  background-color: #f8b319;
+  padding: 19px 47px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.first-section .bot-movies-container .movies-title {
+  margin: 60px 0px 30px 0px;
+  font-family: "Lato", sans-serif;
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 30px;
+  color: #f9f9f9;
+}
+.first-section .episode {
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 18px;
+  text-align: left;
+  color: #f9f9f9;
+  opacity: 0.7;
+  position: absolute;
+  left: 10px;
+  top: 199px;
+  z-index: 919219221;
+}
+.first-section .genre {
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 18px;
+  text-align: left;
+  color: #f9f9f9;
+  opacity: 0.7;
+  position: absolute;
+  right: 10px;
+  top: 199px;
+  z-index: 919219221;
+}
+.first-section .title-name {
+  position: absolute;
+  top: 21px;
+  left: 21px;
+  font-family: "Lato", sans-serif;
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 24px;
+  text-align: left;
+  color: #f9f9f9;
+  cursor: pointer;
+  z-index: 919219221;
+}
+.first-section .stars {
+  position: absolute;
+  top: 57px;
+  left: 21px;
+  cursor: pointer;
+  z-index: 919219221;
+}
+
+.bot-container-cards {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.bot-container-cards .card1 {
+  width: 100%;
+  max-width: 237px;
+  position: relative;
+}
+.bot-container-cards .card2 {
+  width: 100%;
+  max-width: 237px;
+  position: relative;
+}
+.bot-container-cards .card3 {
+  width: 100%;
+  max-width: 237px;
+  position: relative;
+}
+
+.cards {
+  position: relative;
+}
+
+.plus-container {
+  width: 57px;
+  height: 57px;
+  border-radius: 20px;
+  gap: 10px;
+  background-color: rgba(249, 249, 249, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+  cursor: pointer;
+  z-index: 919219221;
+}
+
+.more-info {
+  width: 150px;
+  height: 57px;
+  border-radius: 15px;
+  background-color: #f8b319;
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  cursor: pointer;
+  z-index: 919219221;
+}
+
+.top-rated-section {
+  max-width: 100%;
+}
+.top-rated-section .top-rated-section-container {
+  max-width: 1440px;
+}
+.top-rated-section .top-rated-section-container .top-rated-movies-content {
+  display: flex;
+  font-family: "Lato", sans-serif;
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 48px;
+  color: #ffffff;
+  margin: 212px 0px 66px 140px;
+}
+.top-rated-section .top-rated-container {
+  margin-left: 159px;
+  gap: 34px;
+}
+
+.movieImg {
+  width: 295px;
+  height: 417px;
+  border-radius: 17px 17px 0px 0px;
+}
+
+.ratedMovieTitle {
+  width: 295px;
+  font-family: "Lato", sans-serif;
+  font-size: 29.24px;
+  font-weight: 600;
+  line-height: 35.09px;
+}
+
+.newTabPlot {
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 16.8px;
+}
+
+.movieInfo {
+  width: 295px;
+}
+.movieInfo .plot {
+  font-family: "Lato", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16.8px;
+  color: #ffffff;
+}
+
+.releaseDate {
+  font-family: "Lato", sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 20.4px;
+  color: #f9f9f9;
+  opacity: 0.7;
+  margin: 11px 0px 17px 0px;
+}
+
+.rights {
+  font-family: "Luckiest Guy", cursive;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 32px;
+  margin: 101px 0px 71px 0px;
+  color: #f8b319;
+}
+
+.card {
+  cursor: pointer;
+  position: relative;
+}
+.card .rating {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 3px 21px 7px 23px;
+  background-color: #f8b319;
+  font-family: "Lato", sans-serif;
+  font-size: 23px;
+  font-weight: 600;
+  line-height: 27.6px;
+  color: #000000;
+  border-radius: 0px 17px;
+}
+
+.swiper-button-prev {
+  color: #fff;
+  padding: 17px 20px;
+  background-color: rgba(249, 249, 249, 0.2);
+  border-radius: 12px;
+  left: 40px;
+}
+
+.swiper-button-next {
+  color: #fff;
+  padding: 17px 20px;
+  background-color: rgba(249, 249, 249, 0.2);
+  border-radius: 12px;
+  right: 40px;
+}
+
+#results {
+  margin-top: 56px;
+  position: absolute;
+  z-index: 110;
+  top: 0;
+  right: 0;
+  background-color: black;
+}
+
+.movieSearchItem {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 5px 0;
+  list-style-type: none;
+  cursor: pointer;
+}
+
+.movieSearchImage {
+  width: 50px;
+}
+
+.white {
+  background-color: #ffffff;
+}
+
+.black {
+  color: #000000;
+}
+
+.swiper-button-prev:after {
+  font-size: 16px;
+}
+
+.swiper-button-next:after {
+  font-size: 16px;
+}
+
+.burger-menu {
+  position: absolute;
+  top: 52px;
+  right: 10px;
+  display: none;
+}
+
+.menu-toggle {
+  background-color: #333;
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.sidebar {
+  height: 100vh;
+  width: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #333;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  z-index: 9999;
+}
+
+.sidebar a {
+  padding: 10px 15px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  display: block;
+}
+
+.sidebar a:hover {
+  background-color: #575757;
+}
+
+.close-btn {
+  position: absolute;
+  top: 20px;
+  left: 150px; /* Перемещаем кнопку закрытия влево */
+  font-size: 36px;
+  margin-left: 50px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.opened .sidebar {
+  width: 250px;
+}
+
+.opened .content {
+  margin-right: 250px; /* Сдвигаем контент влево при открытии меню */
+}
+
+.hidden {
+  display: none;
+}
+
+/* media */
+@media (max-width: 1024px) {
+  .burger-menu {
+    display: block;
+  }
+  .Movies {
+    display: none;
+  }
+  .TV-Shows {
+    display: none;
+  }
+  .Anime {
+    display: none;
+  }
+  .input {
+    display: none;
+  }
+  .key {
+    display: none;
+  }
+  .search {
+    display: none;
+  }
+  .left-container {
+    position: absolute;
+    left: -110px;
+    top: -30px;
+  }
+}/*# sourceMappingURL=style.css.map */
